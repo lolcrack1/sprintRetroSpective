@@ -5,13 +5,15 @@ import io.sprintretro.retroboard.dto.SwimLaneDTO;
 import io.sprintretro.retroboard.dto.UpdateSwimLaneDTO;
 import io.sprintretro.retroboard.entities.SwimLaneEntity;
 import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
 import org.mapstruct.MappingTarget;
 import org.mapstruct.factory.Mappers;
 
-@Mapper
+@Mapper(componentModel = "spring")
 public interface SwimLaneMapper {
-    SwimLaneMapper INSTANCE= Mappers.getMapper(SwimLaneMapper.class);
+    SwimLaneMapper INSTANCE = Mappers.getMapper(SwimLaneMapper.class);
 
+    @Mapping(target = "responseDTOSet", source = "responseSet")
     SwimLaneDTO mapEntityToDto(SwimLaneEntity swimLaneEntity);
 
     //SwimLaneEntity mapDtoToEntity(SwimLaneDTO swimLaneDto);
@@ -23,7 +25,6 @@ public interface SwimLaneMapper {
     //UpdateSwimLaneDTO mapUpdateEntityToDto(SwimLaneEntity swimLaneEntity);
 
     SwimLaneEntity mapUpdateDtoToEntity(UpdateSwimLaneDTO updateSwimLaneDTO, @MappingTarget SwimLaneEntity swimLane);
-
 
 
 }

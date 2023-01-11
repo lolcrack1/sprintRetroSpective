@@ -10,8 +10,9 @@
             </column>
             <column name="swimlane_name" type="VARCHAR(255)"/>
             <column name="ref_board" type="INTEGER">
-                <constraints nullable="false" foreignKeyName="fk_swimlane_board" references="boardEntity(id)"/>
             </column>
         </createTable>
+        <addForeignKeyConstraint baseTableName="swimlane" baseColumnNames="ref_board" constraintName="fk_swimlane_board" referencedTableName="board"
+                                 referencedColumnNames="id"/>
     </changeSet>
 </databaseChangeLog>

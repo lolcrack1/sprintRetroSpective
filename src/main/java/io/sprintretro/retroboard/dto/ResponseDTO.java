@@ -1,6 +1,5 @@
 package io.sprintretro.retroboard.dto;
 
-import io.sprintretro.retroboard.entities.SwimLaneEntity;
 import lombok.Data;
 
 @Data
@@ -8,11 +7,13 @@ public class ResponseDTO {
 
     private Long id;
 
-    private SwimLaneEntity swimLaneEntity;
+    //private SwimLaneEntity swimLaneEntity;
 
-    private UserDTO userDto;
+    //private UserDTO userDto;
 
-    private String comment;
+    private Long userId;
 
-    private Integer like;
+    private String comments;
+
+    private Integer likes;
 }

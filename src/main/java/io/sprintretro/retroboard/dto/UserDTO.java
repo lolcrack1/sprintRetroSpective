@@ -18,7 +18,7 @@ public class UserDTO {
 
     private String companyName;
 
-    private Set<BoardDTO> boardsDto=new HashSet<>();
+    private Set<BoardDTO> boardsDto = new HashSet<>();
 
-    private Set<ResponseDTO> responsesDto=new HashSet<>();
+    private Set<ResponseDTO> responsesDto = new HashSet<>();
 }

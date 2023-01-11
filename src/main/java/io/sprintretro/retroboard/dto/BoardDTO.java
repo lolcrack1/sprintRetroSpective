@@ -12,7 +12,9 @@ public class BoardDTO {
 
     private String boardName;
 
-    private Set<SwimLaneDTO> swimlaneDto=new HashSet<>();
+    private Set<SwimLaneDTO> swimLaneDTOSet = new HashSet<>();
 
-    private UserDTO usersDto;
+    //private UserDTO usersDto;
+
+    private Long userId;
 }

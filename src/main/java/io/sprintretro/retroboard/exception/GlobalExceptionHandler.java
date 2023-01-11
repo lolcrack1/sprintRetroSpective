@@ -1,7 +1,5 @@
-
 package io.sprintretro.retroboard.exception;
-import io.sprintretro.retroboard.exception.NoResourceException;
-import io.sprintretro.retroboard.exception.NoResponse;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;

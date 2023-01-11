@@ -5,8 +5,6 @@ import io.sprintretro.retroboard.dto.CreateBoardDTO;
 import io.sprintretro.retroboard.dto.UpdateBoardDTO;
 import io.sprintretro.retroboard.entities.BoardEntity;
 
-import java.util.Optional;
-
 public interface BoardService {
 
     public BoardDTO boardCreate(CreateBoardDTO createBoardDto);

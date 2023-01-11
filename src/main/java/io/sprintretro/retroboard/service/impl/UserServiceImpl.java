@@ -16,7 +16,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserEntity getById(Long id) {
-      return userDAO.findById(id).orElseThrow(()->new NoResourceException("User","Id",id));
+        return userDAO.findById(id).orElseThrow(() -> new NoResourceException("User", "Id", id));
 
     }
 }

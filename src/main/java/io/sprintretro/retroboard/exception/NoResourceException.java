@@ -11,7 +11,7 @@ public class NoResourceException extends RuntimeException {
     Long fieldValue;
 
     public NoResourceException(String resourceName, String fieldName, Long fieldValue) {
-        super(String.format("Sorry, the %s with the %s %s could not be found. Input is incorrect.Please check the input and try again.", resourceName, fieldName, fieldValue));
+        super(String.format("Sorry, the %s with the %s %s could not be found.Please check the input and try again.", resourceName, fieldName, fieldValue));
         this.resourceName = resourceName;
         this.fieldName = fieldName;
         this.fieldValue = fieldValue;
